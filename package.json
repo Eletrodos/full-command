@@ -4,6 +4,7 @@
   "description": "Lista intuitiva de comandos equivalentes dos principais sistemas operacionais",
   "main": "index.js",
   "scripts": {
+    "start": "parcel --open --no-autoinstall ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,21 @@
   "bugs": {
     "url": "https://github.com/Eletrodos/full-command/issues"
   },
-  "homepage": "https://github.com/Eletrodos/full-command#readme"
+  "homepage": "https://github.com/Eletrodos/full-command#readme",
+  "dependencies": {
+    "@types/react": "^16.7.3",
+    "@types/react-dom": "^16.0.9",
+    "parcel": "^1.10.3",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0",
+    "tslint-react-a11y": "^1.0.0",
+    "typescript": "^3.1.6"
+  }
 }
