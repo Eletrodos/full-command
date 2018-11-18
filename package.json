@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel --open --no-autoinstall ./src/index.html",
     "build": "parcel build ./src/index.html --public-url ./",
-    "test": "echo \"ok\""
+    "lint": "tslint \"./src/**/*.{ts,tsx,js,jsx}\"",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
