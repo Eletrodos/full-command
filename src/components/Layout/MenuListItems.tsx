@@ -9,7 +9,7 @@ export default class MenuListItems extends Component {
   public render() {
     return (
       <List>
-        {commands.map((text, index) => (
+        {commands.map((text: string) => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>

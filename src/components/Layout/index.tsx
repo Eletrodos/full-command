@@ -8,7 +8,6 @@ import { Theme, withStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar/Toolbar";
 import Typography from "@material-ui/core/Typography/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
-import PropTypes from "prop-types";
 import React, { Component } from "react";
 
 import MenuListItems from "./MenuListItems";
@@ -50,7 +49,7 @@ const styles = (theme: Theme) => ({
 interface ILayoutProps {
   title: string;
   children: React.ReactNode;
-  classes: PropTypes.object.isRequired;
+  classes: any;
 }
 
 class Layout extends Component<ILayoutProps> {
