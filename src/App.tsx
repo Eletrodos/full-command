@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 
 class App extends Component {
   public render() {
-    return <Layout>a</Layout>;
+    return <Layout title="Full Command">Olá mundo</Layout>;
   }
 }
 
