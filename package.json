@@ -4,8 +4,10 @@
   "description": "Lista intuitiva de comandos equivalentes dos principais sistemas operacionais",
   "main": "index.js",
   "scripts": {
-    "start": "parcel --open --no-autoinstall ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url ./",
+    "pre-build": "rm -rf dist/ && mkdir -p dist/data && cp -R data dist",
+    "watch": "parcel --open --no-autoinstall ./src/index.html",
+    "start": "npm run pre-build && npm run watch",
+    "build": "npm run pre-build && parcel build ./src/index.html --public-url ./",
     "lint": "tslint \"./src/**/*.{ts,tsx,js,jsx}\"",
     "test": "npm run lint"
   },
