@@ -2,6 +2,7 @@ import Grid from "@material-ui/core/Grid";
 import React, { Component } from "react";
 
 import Layout from "../../components/Layout";
+import DetailVisualizer from "./DetailVisualizer";
 import ErrorMessage from "./ErrorMessage";
 
 interface ICommandProps {
@@ -41,17 +42,19 @@ export default class Command extends Component<ICommandProps, ICommandStates> {
   }
 
   public render() {
-    const { error } = this.state;
+    const { error, data } = this.state;
     const { match } = this.props;
     const { params } = match;
+    const { name, description } = data;
     return (
       <Layout title="Full Command">
         <Grid container spacing={8}>
-          {error && (
-            <Grid item xs={12}>
-              <ErrorMessage command={params.command} />
-            </Grid>
-          )}
+          <Grid item xs={12}>
+            {error && <ErrorMessage command={params.command} />}
+            {!error && (
+              <DetailVisualizer name={name} description={description} />
+            )}
+          </Grid>
         </Grid>
       </Layout>
     );
