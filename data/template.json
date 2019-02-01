@@ -1,0 +1,16 @@
+{
+  "title": "nome do comando",
+  "description": "escreva aqui a descrição do comando (é bom ser breve)",
+  "windows": {
+    "params": [
+      {
+        "name": "nome do  1",
+        "description": "descrição maneira do seu parâmetro 1"
+      },
+      {
+        "name": "nome do 2",
+        "description": "descrição maneira do seu parâmetro 2"
+      }
+    ]
+  }
+}
